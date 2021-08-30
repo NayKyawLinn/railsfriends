@@ -20,7 +20,7 @@
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.twitter %></td>
-        <td><%= link_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger btn-sm" %></td>
+        <%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger btn-sm" %>
       </tr>
       <% end %>
     <% end %>
